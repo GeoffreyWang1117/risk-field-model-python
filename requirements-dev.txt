@@ -1,0 +1,24 @@
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+pre-commit>=3.0.0
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Performance profiling
+line_profiler>=4.0.0
+memory_profiler>=0.60.0
+
+# Code quality
+isort>=5.0.0
+bandit>=1.7.0
+
+# Future dependencies (commented for v0.1.0)
+# h5py>=3.7.0          # For highD/rounD data processing
+# pandas>=1.5.0        # Enhanced data manipulation  
+# openai>=0.27.0       # LLM API integration
+# cupy-cuda11x>=11.0.0 # CUDA acceleration
+# numba>=0.56.0        # JIT compilation
