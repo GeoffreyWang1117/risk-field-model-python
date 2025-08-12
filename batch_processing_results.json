@@ -1,0 +1,14 @@
+[
+  {
+    "scenario_id": 1,
+    "vehicles_count": 3,
+    "max_risk": 3188.0913054288894,
+    "mean_risk": 978.9945308768196
+  },
+  {
+    "scenario_id": 2,
+    "vehicles_count": 4,
+    "max_risk": 9711.100594570396,
+    "mean_risk": 3722.1865008216473
+  }
+]

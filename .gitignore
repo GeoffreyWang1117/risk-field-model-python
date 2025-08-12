@@ -139,10 +139,22 @@ data/
 datasets/
 highd/
 round/
+HighDdata/
 *.mat
 *.csv
 *.h5
 *.hdf5
+
+# Large data files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
 
 # IDE
 .vscode/

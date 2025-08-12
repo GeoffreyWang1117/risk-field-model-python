@@ -58,6 +58,8 @@ python_reproduction/
 ├── data_processor.py           # 数据处理模块 [独立模块]
 ├── macbook_optimized.py        # MacBook优化版本 [依赖: risk_field_model, data_processor]
 ├── simple_test.py              # 简单测试脚本 [依赖: risk_field_model]
+├── highd_processor.py          # highD数据集处理器 [v0.2.0新增]
+├── test_highd_integration.py   # highD集成测试脚本 [v0.2.0新增]
 ├── requirements.txt            # Python依赖库列表
 ├── conda_setup_guide.md        # Conda环境配置指南
 ├── highd_integration_guide.md  # highD数据集集成指南
@@ -65,6 +67,13 @@ python_reproduction/
     ├── scenario_highway_test.json
     ├── scenario_overtaking_test.json
     └── scenario_merging_test.json
+
+# 数据集目录（不上传到GitHub）
+../HighDdata/                   # highD数据集（与代码目录平行）
+├── 01_tracks.csv              # 录制01轨迹数据  
+├── 01_tracksMeta.csv          # 录制01元数据
+├── 02_tracks.csv              # 录制02轨迹数据
+└── ...                        # 更多录制文件
 ```
 
 ### 🔗 模块依赖图
@@ -75,13 +84,18 @@ graph TD
     D[macbook_optimized.py] --> B
     D --> C
     E[simple_test.py] --> B
-    F[External Dependencies] --> B
-    F --> C
-    F --> A
+    F[highd_processor.py] --> G[HighDdata/]
+    H[test_highd_integration.py] --> F
+    H --> B
+    I[External Dependencies] --> B
+    I --> C
+    I --> A
+    I --> F
     
-    B -.-> G[numpy, matplotlib, scipy]
-    C -.-> H[numpy, json, os]
-    A -.-> I[sys, os, numpy, matplotlib]
+    B -.-> J[numpy, matplotlib, scipy]
+    C -.-> K[numpy, json, os]
+    F -.-> L[pandas, numpy, pathlib]
+    A -.-> M[sys, os, numpy, matplotlib]
 ```
 
 ## 🚀 快速开始
@@ -123,6 +137,16 @@ python simple_test.py
 - 最基础的功能验证
 - 可在缺少依赖时运行
 - 适合环境测试
+
+#### 🗂️ highD数据集集成（v0.2.0新功能）
+```bash
+# 测试highD数据处理
+python test_highd_integration.py
+```
+- 处理真实的德国高速公路轨迹数据
+- 自动提取驾驶场景
+- 与风险场模型无缝集成
+- **注意**: 需要将HighDdata文件夹与代码目录平行放置
 
 ### 3. 基本使用示例
 
