@@ -571,7 +571,7 @@ main                    # 稳定发布版本 (v0.1.0, v0.2.0, ...)
 ### 开发环境设置
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/risk-field-model-python.git
+git clone https://github.com/GeoffreyWang1117/risk-field-model-python.git
 cd risk-field-model-python
 
 # 切换到开发分支
@@ -703,9 +703,9 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ## 📧 联系方式
 
 ### 项目维护
-- **GitHub Issues**: [报告问题和功能请求](https://github.com/your-username/risk-field-model-python/issues)
-- **GitHub Discussions**: [技术讨论和交流](https://github.com/your-username/risk-field-model-python/discussions)
-- **Pull Requests**: [代码贡献](https://github.com/your-username/risk-field-model-python/pulls)
+- **GitHub Issues**: [报告问题和功能请求](https://github.com/GeoffreyWang1117/risk-field-model-python/issues)
+- **GitHub Discussions**: [技术讨论和交流](https://github.com/GeoffreyWang1117/risk-field-model-python/discussions)
+- **Pull Requests**: [代码贡献](https://github.com/GeoffreyWang1117/risk-field-model-python/pulls)
 
 ### 学术合作
 - **研究合作**: 欢迎学术机构基于此项目开展研究合作
@@ -725,7 +725,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/risk-field-model-python.git
+git clone https://github.com/GeoffreyWang1117/risk-field-model-python.git
 cd risk-field-model-python
 
 # 快速体验
